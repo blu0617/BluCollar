@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- LOGIN/SIGNUP SECTION -->
+    <div id="auth-section">
+      <h2>Welcome</h2>
+      <div class="form-toggle">
+        <button onclick="toggleForm('login')">Login</button>
+        <button onclick="toggleForm('signup')">Sign Up</button>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="signup-form" class="auth-form hidden">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- MAID REQUEST FORM (shown after login) -->
+    <div id="request-section" class="hidden">
+      <h2>Generate Maid Request</h2>
+      <form id="maid-request-form">
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Type of Work (e.g. Cleaning, Cooking)" required />
+        <input type="date" required />
+        <input type="time" required />
+        <textarea placeholder="Description of Work" rows="4" required></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm(form) {
+      document.getElementById("login-form").classList.toggle("hidden", form !== 'login');
+      document.getElementById("signup-form").classList.toggle("hidden", form !== 'signup');
+    }
+
+    // Fake login behavior
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("auth-section").classList.add("hidden");
+      document.getElementById("request-section").classList.remove("hidden");
+    });
+
+    document.getElementById("signup-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("auth-section").classList.add("hidden");
+      document.getElementById("request-section").classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>

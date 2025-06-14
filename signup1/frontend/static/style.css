@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+  }
+  
+  .form-toggle button:hover {
+    background-color: #bdbdbd;
+  }
+  
+  .auth-form,
+  #maid-request-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input,
+  #maid-request-form input,
+  #maid-request-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .request-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .accept {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reject {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept:hover {
+    background-color: #45a049;
+  }
+  
+  .reject:hover {
+    background-color: #d32f2f;
+  }
+  

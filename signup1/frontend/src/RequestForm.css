@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the form */
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form Heading */
+  .form-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Form Field Wrapper */
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-btn:active {
+    background-color: #388e3c;
+  }
+  
+  /* Reset Button */
+  .reset-btn {
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .reset-btn:active {
+    background-color: #c62828;
+  }
+  
+  /* Success/Error Message */
+  .submit-message {
+    color: #4CAF50;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+    }
+    .form-heading {
+      font-size: 1.5rem;
+    }
+    .input-field {
+      font-size: 0.9rem;
+    }
+  }
+  

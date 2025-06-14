@@ -1,0 +1,920 @@
+:root {
+    --primary-color: #123459;
+    --primary-light: #1A4C81;
+    --form-background: #1a4c81;
+    --white: #ffffff;
+    --background-color: #f0efeb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    background-color: var(--white);
+    width: 100%;
+    height: 118px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 110px;
+    height: 70px;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.group-copy-wrapper {
+    height: 34px;
+    width: 34px;
+    position: relative;
+    margin-right: 8px;
+}
+
+.group-copy {
+    height: 34px;
+    position: relative;
+}
+
+.oval,
+.oval-copy,
+.img,
+.oval-copy-2,
+.oval-copy-3,
+.group-copy-2 {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.oval {
+    left: 25px;
+    top: 0;
+}
+
+.oval-copy {
+    left: 25px;
+    top: 12px;
+}
+
+.img {
+    left: 25px;
+    top: 25px;
+}
+
+.oval-copy-2 {
+    left: 12px;
+    top: 12px;
+}
+
+.oval-copy-3 {
+    left: 12px;
+    top: 25px;
+}
+
+.group-copy-2 {
+    left: 0;
+    top: 25px;
+}
+
+.heading-2 {
+    color: var(--primary-color);
+    font-family: "DM Sans", Helvetica;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 24px; /* Increased gap for better spacing */
+    align-items: center;
+}
+
+.get-started-button, .login-button {
+    padding: 10px 20px;
+    border-radius: 5px; /* Changed from 50px to match other buttons */
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.get-started-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.login-button {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 80px 110px;
+    background-color: var(--background-color);
+}
+
+.group {
+    width: 100%;
+    max-width: 520px; /* Adjusted for better proportion */
+    margin-right: 60px; /* Reduced to create more space for the form */
+}
+
+.company-heading {
+    font-size: 56px; /* Adjusted size */
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.company-subtext {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 32px;
+    color: #555;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.check-icon {
+    background-color: #e6f0fa;
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+  background-color: #123459;
+  border-radius: 20px;
+  padding: 40px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-columns {
+    display: flex;
+    gap: 24px;
+}
+
+.form-column {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced from 12px */
+    margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.875rem;
+  background-color: white;
+  color: #333;
+}
+
+
+
+.form-group input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+}
+
+.get-started-btn {
+  width: 100%;
+  padding: 0.85rem 2rem !important;
+  background-color: #1A4C81;
+  color: white;
+  border: none;
+  border-radius: 999px !important; /* Capsule shape */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.get-started-btn:hover {
+    background-color: white;
+}
+
+.get-started-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+    .home {
+        padding: 60px;
+    }
+    
+    .header {
+        padding: 0 60px;
+    }
+    
+    .company-heading {
+        font-size: 48px;
+    }
+    
+    .form-wrapper {
+        width: 520px; /* Adjusted for responsiveness */
+    }
+}
+
+@media (max-width: 992px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 40px;
+    }
+    
+    .group {
+        margin-right: 0;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+    
+    .form-wrapper {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .buttons-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .home {
+        padding: 40px 20px;
+    }
+    
+    .company-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .company-subtext {
+        text-align: center;
+    }
+    
+    .form-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-wrapper {
+        padding: 30px 20px;
+    }
+}
+
+/* Form container adjustments */
+.signup-form-container {
+  background-color: #123459;  /* Dark blue background matching image 2 */
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px; /* Match width in image 2 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Form grid layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; /* Reduced gap back to original */
+    column-gap: 2rem; /* Keep good horizontal spacing */
+}
+
+/* Form field adjustments */
+.form-field {
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.form-field label {
+    display: block;
+    color: white;
+    margin-bottom: 0.25rem; /* Reduced margin */
+    font-size: 0.9rem;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 1rem; /* Increased padding for larger input fields */
+    border-radius: 12px;
+    border: none;
+    font-size: 0.875rem;
+    background-color: white;
+}
+
+/* Heading adjustments */
+.signup-heading {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem; /* Reduced margin */
+    text-align: center;
+}
+
+/* Button adjustments */
+.get-started-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1A4C81;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.9rem; /* Slightly smaller text */
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.get-started-btn:hover {
+    background-color: #1e5da0;
+}
+
+/* Full-width fields (Address) */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* SignUp.css */
+.signup-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.signup-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 6rem;
+  gap: 8rem; /* Adjusted gap between left content and form */
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.signup-left {
+  flex: 1;
+  max-width: 520px; /* Increased to accommodate larger heading */
+  padding-top: 0;
+  text-align: left;
+}
+
+.signup-title {
+  color: #123459;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  letter-spacing: -0.02em;
+  max-width: 520px;
+}
+
+.signup-title .first-line {
+  display: block;
+  white-space: nowrap; /* This ensures first line stays together */
+}
+
+.signup-title .second-line {
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.signup-description {
+  color: #12345999;
+  font-size: 0.95rem; /* Reduced from 1.1rem */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 480px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  height: 24px; /* Set fixed height to control spacing */
+}
+
+/* This is the key part that will remove the large vertical gaps */
+.features-list > * {
+  margin: 0 !important; /* Force remove any margins */
+  padding: 0 !important; /* Force remove any padding */
+}
+
+.feature-item + .feature-item {
+  margin-top: 4px !important; /* Add tiny gap between items */
+}
+
+.tick-circle {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #123459;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item span {
+  font-size: 1rem;
+  line-height: 1;
+  color: #123459;
+  font-weight: 500;
+}
+
+/* Form styles */
+.signup-form-container {
+  background-color: #123459;
+  border-radius: 24px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 550px;
+  margin-left: auto; /* This helps maintain position when gap increases */
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem; /* Increased from 1rem for more space between inputs */
+  margin-bottom: 1.5rem; /* Slightly increased for better vertical spacing */
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem; /* Slightly smaller labels */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem; /* Increased padding for larger input fields */
+  border-radius: 12px;
+  border: none;
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.get-started-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1A4C81;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem; /* Slightly smaller text */
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.get-started-btn:hover {
+  background-color: #1e5da0;
+}
+
+/* Footer styles */
+.features-section {
+  background-color: #123459;
+  padding: 1.25rem 0;
+  margin-top: auto;
+}
+
+.features-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+}
+
+.feature-icon {
+  background-color: #1A4C81;
+  border-radius: 99px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .signup-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .signup-left {
+    text-align: center;
+  }
+
+  .features-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+}
+
+/* Ensure proper line breaks and spacing */
+.signup-title br {
+  display: block;
+  content: "";
+}
+
+/* Add these navbar styles to your CSS */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: var(--white);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar-container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Reduced from 4px for tighter spacing */
+}
+
+.logo-dots-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  width: 12px; /* Reduced from 16px for tighter spacing */
+  height: 12px; /* Reduced from 16px for tighter spacing */
+  margin-top: 6px; /* Adjusted to align with text */
+  margin-left: -2px; /* Added to align with text left alignment */
+}
+
+.logo-dot {
+  width: 4px; /* Reduced from 5px */
+  height: 4px; /* Reduced from 5px */
+  background-color: #123459;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: #123459;
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 1; /* Ensure text is fully visible */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 200px; /* Space after logo */
+}
+
+.nav-link {
+  color: #123459;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+  color: #1A4C81;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn {
+  padding: 0.625rem 2rem;
+  border: 1px solid #123459;
+  border-radius: 50px;
+  color: #123459;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-btn {
+  padding: 0.625rem 1.5rem;
+  background-color: #123459;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Adjust the content spacing */
+.signup-content {
+  padding-top: 8rem;
+  align-items: center;
+}
+
+/* Highlights list styles */
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #e6f0fa;
+  border-radius: 50%;
+  color: #123459;
+  font-size: 14px;
+}
+
+.highlight-item span {
+  color: #123459;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.signup-container {
+  min-height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.signup-form {
+  background: #123459;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 480px;
+}
+
+.login-link-container {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.login-link {
+  color: #123459;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.login-link:hover {
+  color: #1b4c82;
+  text-decoration: underline;
+}
+
+/* Adjust form field spacing */
+.signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.signup-form .form-group:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* Submit button styling */
+.signup-form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #123459;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signup-form .submit-btn:hover {
+  background-color: #1b4c82;
+}
+
+.signup-form-container {
+  background-color: #123459 !important;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+src
+.signup-form .form-group label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+.signup-form .form-group input {
+  width: 100% !important;
+  padding: 1rem !important;
+  border-radius: 12px !important;
+  border: none !important;
+  font-size: 1rem !important;
+  background-color: #ffffff !important;
+  color: #333 !important;
+}
+.signup-form-container {
+  background-color: #123459 !important;
+  border-radius: 20px;
+  padding: 1px 36px !important; /* reduced height, slightly wider */
+  width: 100%;
+  max-width: 540px; /* slightly wider */
+}
+
+.signup-form .form-group label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+.signup-form .form-group input {
+  width: 100% !important;
+  padding: 0.85rem 1rem !important;
+  border-radius: 12px !important;
+  border: none !important;
+  font-size: 1rem !important;
+  background-color: #ffffff !important;
+  color: #333 !important;
+}

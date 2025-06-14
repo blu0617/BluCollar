@@ -1,0 +1,108 @@
+.account-details-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  padding: 2rem;
+}
+
+.account-details-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(30, 58, 138, 0.08), 0 1.5px 4px rgba(30, 58, 138, 0.04);
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.account-details-title {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.account-details-info {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.account-details-label {
+  color: #123459;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.account-details-info p {
+  margin: 0.5rem 0;
+  font-size: 1.08rem;
+  color: #374151;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1e3a8a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.account-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.edit-btn, .logout-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #e5e7eb;
+  color: #1e3a8a;
+}
+
+.logout-btn {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background: #123459;
+}
+
+.account-alt {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.alt-link {
+  color: #1e3a8a;
+  text-decoration: underline;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 600px) {
+  .account-details-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .account-details-title {
+    font-size: 1.3rem;
+  }
+} 

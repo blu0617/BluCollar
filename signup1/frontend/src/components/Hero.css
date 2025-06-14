@@ -1,0 +1,130 @@
+.hero-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-container.background-image {
+  background: url('../assets/housecleaners.jpg') no-repeat center center/cover;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity here for fading */
+  z-index: 1;
+}
+
+.hero-content.center-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 1.25rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #ffffff;
+  color: #1a1a1a;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 4rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 90%;
+  }
+}

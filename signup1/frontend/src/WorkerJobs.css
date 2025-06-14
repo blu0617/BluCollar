@@ -1,0 +1,141 @@
+/* WorkerJobs Page Styles */
+.worker-jobs-container {
+  padding: 20px;
+  background-color: #f9fbfd;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #123459;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sort-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #123459;
+  margin-right: 10px;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  border: 1px solid #123459;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #123459;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.customer-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #123459;
+}
+
+.urgency-badge {
+  display: flex;
+  align-items: center;
+  background-color: #ffefef;
+  color: #d9534f;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.urgency-icon {
+  margin-right: 5px;
+}
+
+.job-info {
+  margin-bottom: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-icon {
+  margin-right: 8px;
+  color: #1a4c81;
+}
+
+.map-container {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.map-placeholder {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #888;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.accept-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #123459;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+  background-color: #1a4c81;
+}
+
+.no-jobs {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
